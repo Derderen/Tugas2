@@ -1,0 +1,92 @@
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: poppins;
+    color: white;
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px
+}
+
+.nav .menu{
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-size: large;
+}
+
+.nav .menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-size: large;
+}
+
+.nav .menu a:hover {
+    color: blue;
+  }
+
+.container{   
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.hello{
+    font-family: Source Code Pro; 
+    color: blue;
+}
+
+.insta{
+    font-family:poppins; 
+    font-weight: bold; 
+    padding:10px; 
+    border-radius: 10px;
+    border: 0;
+    transition: 0.5s;
+}
+
+.insta:hover{
+    background: linear-gradient(45deg, #ffce48, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    color: white;
+}
+
+footer {
+    color: white;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .container {
+        width: 300px;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .nav .menu{
+        display: none;
+    }
+
+}
+
+  
