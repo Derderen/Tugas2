@@ -49,6 +49,12 @@ body{
     gap: 30px;
 }
 
+.favthing{   
+    flex: 1;
+    display: flex;
+    gap: 30px;
+}
+
 
 .hello{
     font-family: Source Code Pro; 
@@ -70,16 +76,95 @@ body{
 }
 
 footer {
+    padding-top: 70px;
+    padding-bottom: 15px;
     color: white;
     text-align: center;
   }
+
+.favorite{
+    display: grid;
+    grid-template-columns: 140px 140px 140px ;
+    grid-template-rows: 140px 140px 140px;
+    gap: 70px;
+
+}
+
+.item1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(170, 0, 0);
+    color: rgb(206, 206, 206);
+}
+.item2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(255, 108, 9);
+    color: rgb(0, 0, 0);
+}
+.item3{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.item4{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(55, 0, 255);
+    color: rgb(243, 243, 243);
+}
+.xsr{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: unset;
+    height: 200px;
+    width: 410px;
+    text-align: center;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.sushi{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(255, 108, 9);
+    color: rgb(0, 0, 0);
+}
 
   @media only screen and (max-width: 500px) {
     .container {
         width: 300px;
         max-width: 300px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 0px;
         flex-direction: column;
     }
 
@@ -87,6 +172,36 @@ footer {
         display: none;
     }
 
+
+    .favorite{
+        padding-right: 25px;
+        padding-left: 25px;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: mandatory;
+        gap: 10px;
+        
+    }
+
+    .item1{
+        display: none;
+    }
+
+    .item4, .item3, .item2{
+        flex: 0 0 auto;
+     
+    }
+
+    .favthing{
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    }
+
+    footer{
+        padding: unset;
+    }
 }
 
   
